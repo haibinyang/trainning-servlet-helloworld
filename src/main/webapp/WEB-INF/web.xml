@@ -20,6 +20,15 @@
     <servlet-class>top.yhb123.DownloadJar</servlet-class>
   </servlet>
 
+  <servlet>
+    <servlet-name>ReadConfig</servlet-name>
+    <servlet-class>top.yhb123.ReadConfig</servlet-class>
+    <init-param>
+      <param-name>adminEmail</param-name>
+      <param-value>yhb@123.com</param-value>
+    </init-param>
+  </servlet>
+
   <servlet-mapping>
     <servlet-name>sName</servlet-name>
     <url-pattern>/h1</url-pattern>
@@ -33,5 +42,10 @@
   <servlet-mapping>
     <servlet-name>DownloadJar</servlet-name>
     <url-pattern>/downloadjar</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>ReadConfig</servlet-name>
+    <url-pattern>/config</url-pattern>
   </servlet-mapping>
 </web-app>
