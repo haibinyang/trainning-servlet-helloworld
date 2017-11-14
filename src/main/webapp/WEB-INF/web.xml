@@ -21,6 +21,11 @@
   </servlet>
 
   <servlet>
+    <servlet-name>ReadContext</servlet-name>
+    <servlet-class>top.yhb123.ReadContext</servlet-class>
+  </servlet>
+
+  <servlet>
     <servlet-name>ReadConfig</servlet-name>
     <servlet-class>top.yhb123.ReadConfig</servlet-class>
     <init-param>
@@ -48,4 +53,15 @@
     <servlet-name>ReadConfig</servlet-name>
     <url-pattern>/config</url-pattern>
   </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>ReadContext</servlet-name>
+    <url-pattern>/context</url-pattern>
+  </servlet-mapping>
+
+  <context-param>
+    <param-name>appConfig</param-name>
+    <param-value>Phicomm</param-value>
+  </context-param>
+
 </web-app>
