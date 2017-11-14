@@ -10,8 +10,18 @@
     <servlet-class>top.yhb123.HelloWorld</servlet-class>
   </servlet>
 
+  <servlet>
+    <servlet-name>BeerSelect</servlet-name>
+    <servlet-class>top.yhb123.BeerSelect</servlet-class>
+  </servlet>
+
   <servlet-mapping>
     <servlet-name>sName</servlet-name>
     <url-pattern>/h1</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>BeerSelect</servlet-name>
+    <url-pattern>/beer</url-pattern>
   </servlet-mapping>
 </web-app>
