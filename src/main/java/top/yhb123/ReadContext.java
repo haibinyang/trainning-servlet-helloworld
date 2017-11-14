@@ -1,5 +1,7 @@
 package top.yhb123;
 
+import top.yhb123.model.Dog;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -25,7 +27,13 @@ public class ReadContext extends HttpServlet {
         PrintWriter out = resp.getWriter();
 
         String appConfig = getServletContext().getInitParameter("appConfig");
-        out.println("Context param = " + appConfig);
+        out.println("Context param = " + appConfig + "<br/>");
+        out.println("ServerInfo = " + getServletContext().getServerInfo());
+        out.println("MajorVersion = " + getServletContext().getMajorVersion());
+        getServletContext().log("hb");
+
+        Dog dog = (Dog) getServletContext().getAttribute("dog");
+        out.println("Dog's breed is " + dog.getBreed());
     }
 
     @Override

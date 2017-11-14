@@ -64,4 +64,15 @@
     <param-value>Phicomm</param-value>
   </context-param>
 
+  <context-param>
+    <param-name>breed</param-name>
+    <param-value>Great Dane</param-value>
+  </context-param>
+
+  <listener>
+    <listener-class>
+      top.yhb123.MyServletContextListener
+    </listener-class>
+  </listener>
+
 </web-app>
