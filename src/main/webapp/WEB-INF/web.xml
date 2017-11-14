@@ -15,6 +15,11 @@
     <servlet-class>top.yhb123.BeerSelect</servlet-class>
   </servlet>
 
+  <servlet>
+    <servlet-name>DownloadJar</servlet-name>
+    <servlet-class>top.yhb123.DownloadJar</servlet-class>
+  </servlet>
+
   <servlet-mapping>
     <servlet-name>sName</servlet-name>
     <url-pattern>/h1</url-pattern>
@@ -23,5 +28,10 @@
   <servlet-mapping>
     <servlet-name>BeerSelect</servlet-name>
     <url-pattern>/beer</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>DownloadJar</servlet-name>
+    <url-pattern>/downloadjar</url-pattern>
   </servlet-mapping>
 </web-app>
